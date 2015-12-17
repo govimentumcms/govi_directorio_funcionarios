@@ -48,6 +48,7 @@ function govi_directorio_funcionarios_views_default_views() {
   $handler->display->display_options['style_options']['use-grouping-header'] = 1;
   $handler->display->display_options['style_options']['collapsible'] = 1;
   $handler->display->display_options['style_options']['row-start-open'] = '0';
+  $handler->display->display_options['style_options']['autoheight'] = 0;
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['inline'] = array(
     'field_correo_institucional' => 'field_correo_institucional',
@@ -57,7 +58,7 @@ function govi_directorio_funcionarios_views_default_views() {
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['label'] = 'Nombre';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
@@ -65,13 +66,12 @@ function govi_directorio_funcionarios_views_default_views() {
   $handler->display->display_options['fields']['field_cargo']['id'] = 'field_cargo';
   $handler->display->display_options['fields']['field_cargo']['table'] = 'field_data_field_cargo';
   $handler->display->display_options['fields']['field_cargo']['field'] = 'field_cargo';
-  $handler->display->display_options['fields']['field_cargo']['label'] = '';
   $handler->display->display_options['fields']['field_cargo']['element_label_colon'] = FALSE;
   /* Field: Content: Correo institucional */
   $handler->display->display_options['fields']['field_correo_institucional']['id'] = 'field_correo_institucional';
   $handler->display->display_options['fields']['field_correo_institucional']['table'] = 'field_data_field_correo_institucional';
   $handler->display->display_options['fields']['field_correo_institucional']['field'] = 'field_correo_institucional';
-  $handler->display->display_options['fields']['field_correo_institucional']['label'] = '';
+  $handler->display->display_options['fields']['field_correo_institucional']['label'] = 'Correo';
   $handler->display->display_options['fields']['field_correo_institucional']['element_label_colon'] = FALSE;
   /* Field: Content: Dependencia / Oficina */
   $handler->display->display_options['fields']['field_dependencia_oficina']['id'] = 'field_dependencia_oficina';
@@ -84,13 +84,12 @@ function govi_directorio_funcionarios_views_default_views() {
   $handler->display->display_options['fields']['field_sede']['id'] = 'field_sede';
   $handler->display->display_options['fields']['field_sede']['table'] = 'field_data_field_sede';
   $handler->display->display_options['fields']['field_sede']['field'] = 'field_sede';
-  $handler->display->display_options['fields']['field_sede']['label'] = '';
   $handler->display->display_options['fields']['field_sede']['element_label_colon'] = FALSE;
   /* Field: Content: Teléfono / Extensión */
   $handler->display->display_options['fields']['field_telefono_extension']['id'] = 'field_telefono_extension';
   $handler->display->display_options['fields']['field_telefono_extension']['table'] = 'field_data_field_telefono_extension';
   $handler->display->display_options['fields']['field_telefono_extension']['field'] = 'field_telefono_extension';
-  $handler->display->display_options['fields']['field_telefono_extension']['label'] = '';
+  $handler->display->display_options['fields']['field_telefono_extension']['label'] = 'Teléfono';
   $handler->display->display_options['fields']['field_telefono_extension']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
@@ -113,7 +112,7 @@ function govi_directorio_funcionarios_views_default_views() {
   );
 
   /* Display: Page */
-  $handler = $view->new_display('page', 'Page', 'page_1');
+  $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'directorio-funcionarios';
   $translatables['directorio_funcionarios'] = array(
     t('Master'),
@@ -131,6 +130,11 @@ function govi_directorio_funcionarios_views_default_views() {
     t('‹ Anterior'),
     t('Siguiente ›'),
     t('Último »'),
+    t('Nombre'),
+    t('Cargo'),
+    t('Correo'),
+    t('Sede'),
+    t('Teléfono'),
     t('Page'),
   );
   $export['directorio_funcionarios'] = $view;

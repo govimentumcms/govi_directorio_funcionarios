@@ -1,5 +1,5 @@
 name = Govi Directorio Funcionarios
-description = Govi Directorio Funcionarios Feature
+description = Característica Funcional que implementa el directorio de funcionarios y dr ajusta al modelo de alta masivo del SIGEP
 core = 7.x
 package = Govimentum
 version = 7.x-1.0-beta1

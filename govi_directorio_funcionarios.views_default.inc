@@ -110,6 +110,13 @@ function govi_directorio_funcionarios_views_default_views() {
   $handler->display->display_options['fields']['field_tipo_de_funcionario']['label'] = '';
   $handler->display->display_options['fields']['field_tipo_de_funcionario']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_tipo_de_funcionario']['element_label_colon'] = FALSE;
+  /* Field: Content: Enlace SIGEP */
+  $handler->display->display_options['fields']['field_enlace_sigep']['id'] = 'field_enlace_sigep';
+  $handler->display->display_options['fields']['field_enlace_sigep']['table'] = 'field_data_field_enlace_sigep';
+  $handler->display->display_options['fields']['field_enlace_sigep']['field'] = 'field_enlace_sigep';
+  $handler->display->display_options['fields']['field_enlace_sigep']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_enlace_sigep']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_enlace_sigep']['type'] = 'link_url';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -154,6 +161,7 @@ function govi_directorio_funcionarios_views_default_views() {
     t('Correo Institucional'),
     t('Sede'),
     t('Teléfono / Extensión'),
+    t('Enlace SIGEP'),
     t('Page'),
   );
   $export['directorio_funcionarios'] = $view;

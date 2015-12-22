@@ -46,7 +46,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 9,
+      'weight' => 1,
     ),
   );
 
@@ -87,7 +87,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => 7,
     ),
   );
 
@@ -128,7 +128,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 1,
+      'weight' => 4,
     ),
   );
 
@@ -169,7 +169,64 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 4,
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'node-directorio_funcionarios-field_enlace_sigep'.
+  $field_instances['node-directorio_funcionarios-field_enlace_sigep'] = array(
+    'bundle' => 'directorio_funcionarios',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Ingrese el enlace con la dirección absoluta que apunta al perfil del funcionario en el Sistema de Información y Gestión del Empleo Público SIGEP.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 23,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_enlace_sigep',
+    'label' => 'Enlace SIGEP',
+    'required' => 0,
+    'settings' => array(
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => '_blank',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'rel_remove' => 'default',
+      'title' => 'optional',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 18,
     ),
   );
 
@@ -225,7 +282,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_text',
-      'weight' => 19,
+      'weight' => 16,
     ),
   );
 
@@ -276,7 +333,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 7,
+      'weight' => 3,
     ),
   );
 
@@ -313,7 +370,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 16,
+      'weight' => 13,
     ),
   );
 
@@ -354,7 +411,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'size' => 20,
       ),
       'type' => 'text_textfield',
-      'weight' => 18,
+      'weight' => 15,
     ),
   );
 
@@ -395,7 +452,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 12,
+      'weight' => 9,
     ),
   );
 
@@ -436,7 +493,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 14,
+      'weight' => 11,
     ),
   );
 
@@ -476,7 +533,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 8,
     ),
   );
 
@@ -517,7 +574,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 13,
+      'weight' => 10,
     ),
   );
 
@@ -558,7 +615,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 15,
+      'weight' => 12,
     ),
   );
 
@@ -599,7 +656,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 2,
+      'weight' => 5,
     ),
   );
 
@@ -641,7 +698,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 8,
+      'weight' => 2,
     ),
   );
 
@@ -679,7 +736,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 20,
+      'weight' => 17,
     ),
   );
 
@@ -721,7 +778,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 17,
+      'weight' => 14,
     ),
   );
 
@@ -738,9 +795,11 @@ function govi_directorio_funcionarios_field_default_field_instances() {
   t('Digite el documento de identidad del funcionario');
   t('Digite el primer nombre');
   t('Digite la fecha de nacimiento del funcionario');
+  t('Enlace SIGEP');
   t('Fecha nacimiento');
   t('Foto jefe de área');
   t('Genero');
+  t('Ingrese el enlace con la dirección absoluta que apunta al perfil del funcionario en el Sistema de Información y Gestión del Empleo Público SIGEP.');
   t('Ingrese el nombre de la dependencia / Oficina del Funcionario');
   t('Ingrese el tipo de funcionario');
   t('Ingrese la sede del funcionario');

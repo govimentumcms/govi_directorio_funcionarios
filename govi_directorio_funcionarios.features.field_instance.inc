@@ -46,7 +46,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -87,7 +87,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 5,
     ),
   );
 
@@ -169,7 +169,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 3,
     ),
   );
 
@@ -226,7 +226,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 18,
+      'weight' => 11,
     ),
   );
 
@@ -282,7 +282,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_text',
-      'weight' => 16,
+      'weight' => 9,
     ),
   );
 
@@ -333,7 +333,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 3,
+      'weight' => 9,
     ),
   );
 
@@ -370,7 +370,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 13,
+      'weight' => 6,
     ),
   );
 
@@ -411,7 +411,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'size' => 20,
       ),
       'type' => 'text_textfield',
-      'weight' => 15,
+      'weight' => 8,
     ),
   );
 
@@ -452,7 +452,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 9,
+      'weight' => 2,
     ),
   );
 
@@ -493,7 +493,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 11,
+      'weight' => 4,
     ),
   );
 
@@ -533,7 +533,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 8,
+      'weight' => 7,
     ),
   );
 
@@ -574,7 +574,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 10,
+      'weight' => 3,
     ),
   );
 
@@ -615,7 +615,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 12,
+      'weight' => 5,
     ),
   );
 
@@ -656,7 +656,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -698,7 +698,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 2,
+      'weight' => 8,
     ),
   );
 
@@ -736,7 +736,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 17,
+      'weight' => 10,
     ),
   );
 
@@ -778,7 +778,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 14,
+      'weight' => 7,
     ),
   );
 

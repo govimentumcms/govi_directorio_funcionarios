@@ -11,6 +11,9 @@ function govi_directorio_funcionarios_ctools_plugin_api($module = NULL, $api = N
   if ($module == "context" && $api == "context") {
     return array("version" => "3");
   }
+  if ($module == "field_group" && $api == "field_group") {
+    return array("version" => "1");
+  }
   if ($module == "field_validation" && $api == "default_field_validation_rules") {
     return array("version" => "2");
   }

@@ -20,6 +20,7 @@ dependencies[] = views_accordion
 dependencies[] = views_ui
 features[context][] = directorio_funcionarios
 features[ctools][] = context:context:3
+features[ctools][] = field_group:field_group:1
 features[ctools][] = field_validation:default_field_validation_rules:2
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2

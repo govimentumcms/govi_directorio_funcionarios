@@ -76,8 +76,7 @@ function govi_directorio_funcionarios_field_group_info() {
       'instance_settings' => array(
         'required_fields' => 1,
         'classes' => 'group-datos-sigep field-group-fieldset',
-        'description' => '<h5>Estos datos corresponden al modelo propuesto por el Departamento Administrativo de Función Pública para ejecutar del proceso de carga Alta Masivo al Sistema de Información y Gestión del Empleo Público SIGEP.<br/>
-Estos datos deberán ser generados en un arcchivo de texto plano separado por comas y enviado formalmente por parte del Director o Jefe de Talento Humano de la Entidad. Las instrucciones para solicitar el Alta Masivo pueden ser consultadas en el siguiente enlace: XXXXX</h5>',
+        'description' => '<h5>Estos datos corresponden al modelo propuesto por el Departamento Administrativo de Función Pública para ejecutar del proceso de carga Alta Masivo al Sistema de Información y Gestión del Empleo Público SIGEP, los cuales deberán ser generados en un archivo de texto plano separado por comas y enviado formalmente por parte del Director o Jefe de Talento Humano de la Entidad.<br/> Las instrucciones para solicitar el Alta Masivo pueden ser consultadas en el siguiente enlace: XXXXX</h5>',
       ),
       'formatter' => 'collapsed',
     ),

@@ -16,7 +16,6 @@ dependencies[] = menu
 dependencies[] = options
 dependencies[] = text
 dependencies[] = views
-dependencies[] = views_accordion
 dependencies[] = views_ui
 features[context][] = directorio_funcionarios
 features[ctools][] = context:context:3

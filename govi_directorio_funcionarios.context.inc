@@ -19,7 +19,7 @@ function govi_directorio_funcionarios_context_default_contexts() {
   $context->conditions = array(
     'path' => array(
       'values' => array(
-        'directorio-funcionarios' => 'directorio-funcionarios',
+        'organizacion/directorio-funcionarios' => 'organizacion/directorio-funcionarios',
       ),
     ),
   );

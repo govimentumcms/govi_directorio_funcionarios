@@ -139,7 +139,7 @@ function govi_directorio_funcionarios_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page_1');
-  $handler->display->display_options['path'] = 'organizacion/directorio-funcionarios';
+  $handler->display->display_options['path'] = 'transparencia/organizacion/directorio-funcionarios';
   $translatables['directorio_funcionarios'] = array(
     t('Master'),
     t('Directorio Funcionarios'),

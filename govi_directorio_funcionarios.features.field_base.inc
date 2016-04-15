@@ -81,17 +81,22 @@ function govi_directorio_funcionarios_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_dependencia_oficina',
     'indexes' => array(
-      'format' => array(
-        0 => 'format',
+      'tid' => array(
+        0 => 'tid',
       ),
     ),
     'locked' => 0,
-    'module' => 'text',
+    'module' => 'taxonomy',
     'settings' => array(
-      'max_length' => 100,
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'directorio_de_funcionarios_dependencia_oficina',
+          'parent' => 0,
+        ),
+      ),
     ),
     'translatable' => 0,
-    'type' => 'text',
+    'type' => 'taxonomy_term_reference',
   );
 
   // Exported field_base: 'field_enlace_sigep'.

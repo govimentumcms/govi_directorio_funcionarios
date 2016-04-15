@@ -46,7 +46,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 2,
+      'weight' => -4,
     ),
   );
 
@@ -87,7 +87,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => -1,
     ),
   );
 
@@ -128,7 +128,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 4,
+      'weight' => -2,
     ),
   );
 
@@ -138,14 +138,14 @@ function govi_directorio_funcionarios_field_default_field_instances() {
     'bundle' => 'directorio_funcionarios',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Ingrese el nombre de la dependencia / Oficina del Funcionario',
+    'description' => 'Seleccione la oficina.',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 5,
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 24,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -156,20 +156,20 @@ function govi_directorio_funcionarios_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_dependencia_oficina',
-    'label' => 'Dependencia / Oficina',
+    'label' => 'Dependencia / oficina',
     'required' => 1,
     'settings' => array(
-      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 1,
-      'module' => 'text',
+      'active' => 0,
+      'module' => 'taxonomy',
       'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
         'size' => 60,
       ),
-      'type' => 'text_textfield',
-      'weight' => 3,
+      'type' => 'taxonomy_autocomplete',
+      'weight' => -3,
     ),
   );
 
@@ -333,7 +333,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 9,
+      'weight' => 3,
     ),
   );
 
@@ -533,7 +533,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 1,
     ),
   );
 
@@ -656,7 +656,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 0,
     ),
   );
 
@@ -698,7 +698,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 8,
+      'weight' => 2,
     ),
   );
 
@@ -788,7 +788,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
   t('Cargo');
   t('Correo dependencia');
   t('Correo institucional');
-  t('Dependencia / Oficina');
+  t('Dependencia / oficina');
   t('Digite el Nombre del cargo del funcionario');
   t('Digite el Primer Apellido');
   t('Digite el Segundo Apelledo');
@@ -800,7 +800,6 @@ function govi_directorio_funcionarios_field_default_field_instances() {
   t('Foto jefe de área');
   t('Genero');
   t('Ingrese el enlace con la dirección absoluta que apunta al perfil del funcionario en el Sistema de Información y Gestión del Empleo Público SIGEP.');
-  t('Ingrese el nombre de la dependencia / Oficina del Funcionario');
   t('Ingrese el tipo de funcionario');
   t('Ingrese la sede del funcionario');
   t('Numero documento');
@@ -809,6 +808,7 @@ function govi_directorio_funcionarios_field_default_field_instances() {
   t('Sede');
   t('Segundo apellido');
   t('Segundo nombre');
+  t('Seleccione la oficina.');
   t('Seleccione una Opción');
   t('Seleccione una opción');
   t('Teléfono / Extensión');

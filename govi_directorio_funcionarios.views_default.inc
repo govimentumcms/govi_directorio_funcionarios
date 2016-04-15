@@ -74,7 +74,7 @@ function govi_directorio_funcionarios_views_default_views() {
   $handler->display->display_options['fields']['field_correo_institucional']['field'] = 'field_correo_institucional';
   $handler->display->display_options['fields']['field_correo_institucional']['label'] = 'Correo Institucional';
   $handler->display->display_options['fields']['field_correo_institucional']['element_label_colon'] = FALSE;
-  /* Field: Content: Dependencia / Oficina */
+  /* Field: Content: Dependencia / oficina */
   $handler->display->display_options['fields']['field_dependencia_oficina']['id'] = 'field_dependencia_oficina';
   $handler->display->display_options['fields']['field_dependencia_oficina']['table'] = 'field_data_field_dependencia_oficina';
   $handler->display->display_options['fields']['field_dependencia_oficina']['field'] = 'field_dependencia_oficina';

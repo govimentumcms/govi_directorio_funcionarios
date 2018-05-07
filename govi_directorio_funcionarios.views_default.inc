@@ -15,7 +15,7 @@ function govi_directorio_funcionarios_views_default_views() {
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'Directorio Funcionarios';
+  $view->human_name = '3.5 Directorio de Información de servidores públicos y contratistas';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */

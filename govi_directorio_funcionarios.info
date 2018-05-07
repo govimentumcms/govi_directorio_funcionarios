@@ -1,4 +1,4 @@
-name = Govi Directorio Funcionarios
+name = Govi Directorio de Iformación de Servidores Públicos y Contratistas
 description = Característica Funcional que implementa el directorio de funcionarios y dr ajusta al modelo de alta masivo del SIGEP
 core = 7.x
 package = Govimentum

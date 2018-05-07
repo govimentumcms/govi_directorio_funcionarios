@@ -32,9 +32,9 @@ function govi_directorio_funcionarios_views_api($module = NULL, $api = NULL) {
 function govi_directorio_funcionarios_node_info() {
   $items = array(
     'directorio_funcionarios' => array(
-      'name' => t('Directorio Funcionarios'),
+      'name' => t('3.5 Directorio de Información de servidores públicos y contratistas'),
       'base' => 'node_content',
-      'description' => t('Este tipo de contenido permitirá gestionar los datos básicos de contacto de los funcionarios '),
+      'description' => t('Este tipo de contenido contiene la metadata básica que permite la interoperabilidad con el Sistema de Información de Administración Pública - SIDEAP del Departamento Administrativo del Servicio Civil Distrital - DASCD y la referencia al directorio de funcionarios suministrado por esta plataforma para la Entidad.'),
       'has_title' => '1',
       'title_label' => t('Nombre completo'),
       'help' => '',
